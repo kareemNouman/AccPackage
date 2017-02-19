@@ -55,6 +55,7 @@
     <Compile Include="Framework\Domain Models\Role.cs" />
     <Compile Include="Framework\Domain Models\Vendor.cs" />
     <Compile Include="Framework\Domain Models\User.cs" />
+    <Compile Include="Framework\Utilities\Enums.cs" />
     <Compile Include="Mappers\CustomerMap.cs" />
     <Compile Include="Mappers\EmployeeMap.cs" />
     <Compile Include="Mappers\RoleMap.cs" />
@@ -63,7 +64,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Framework\Utilities\" />
     <Folder Include="Framework\ViewModels\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
