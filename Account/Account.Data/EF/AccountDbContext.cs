@@ -30,7 +30,7 @@ namespace Account.Data
 
 
         public AccountDbContext(IWorkContext workContext)
-            : base("Account")
+            : base("AccountPackage")
         {
             this._workContext = workContext;
         }
