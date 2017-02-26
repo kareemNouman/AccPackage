@@ -325,7 +325,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\Enum\AccountRole.cs" />
     <Compile Include="Infrastructure\Helpers\AccountConfig.cs" />
+    <Compile Include="Infrastructure\Helpers\Extensions.cs" />
     <Compile Include="Infrastructure\Services\BaseService.cs" />
     <Compile Include="Models\AccountApiResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

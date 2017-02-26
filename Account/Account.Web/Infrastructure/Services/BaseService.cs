@@ -1,4 +1,5 @@
-﻿using Account.Web.Models;
+﻿using Account.Web.Infrastructure.Helpers;
+using Account.Web.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace Account.Web.Services
     public abstract class BaseService
     {
        // string apival = "/necapi";
-        string apival = NECConfig.ApiEndPoint;
+        string apival = AccountConfig.ApiEndPoint;
 
         /// <summary>
         /// get method request to api
@@ -24,7 +25,7 @@ namespace Account.Web.Services
             var apiResponse = new AccountApiResponse(false, "Unable to connect to api");
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri(NECConfig.ApiUrl);
+                client.BaseAddress = new Uri(AccountConfig.ApiUrl);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -57,7 +58,7 @@ namespace Account.Web.Services
 
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri(NECConfig.ApiUrl);
+                client.BaseAddress = new Uri(AccountConfig.ApiUrl);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -95,7 +96,7 @@ namespace Account.Web.Services
             using (HttpClient client = new HttpClient())
             {
 
-                client.BaseAddress = new Uri(NECConfig.ApiUrl);
+                client.BaseAddress = new Uri(AccountConfig.ApiUrl);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -128,7 +129,7 @@ namespace Account.Web.Services
             var apiResponse = new AccountApiResponse(false, "Unable to connect to api");
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri(NECConfig.ApiUrl);
+                client.BaseAddress = new Uri(AccountConfig.ApiUrl);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -158,7 +159,7 @@ namespace Account.Web.Services
             var apiResponse = new AccountApiResponse(false, "Unable to connect to api");
             using (HttpClient client = new HttpClient())
             {
-                client.BaseAddress = new Uri(NECConfig.ApiUrl);
+                client.BaseAddress = new Uri(AccountConfig.ApiUrl);
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
